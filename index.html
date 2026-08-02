@@ -5,197 +5,148 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Responsive personal portfolio website">
-  <title>Hiruni Kveesha | Portfolio</title>
+  <title>Hiruni Kaveesha | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <style>
+    body {
+      font-family: "Inter", var(--bs-body-font-family)
+    }
+  </style>
+  <script src="script.js" defer></script>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-root-margin="0px 0px -40%" tabindex="0">
+  <a class="visually-hidden-focusable position-fixed top-0 start-0 z-3 m-3 btn btn-primary" href="#mainContent">Skip to
+    main content</a>
+
   <!-- Nav Bar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top" id="mainNavbar"
     aria-label="Main navigation">
-
     <div class="container py-2">
       <a class="navbar-brand fw-bold" href="#home">YourName<span class="text-primary">.</span></a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"><span
-          class="navbar-toggler-icon"></span>
-      </button>
+      <div class="d-flex align-items-center gap-2 order-lg-3">
+        <button class="btn btn-outline-secondary btn-sm" id="themeToggle" type="button">
+          Light mode
+        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
-      <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav ms-auto">
+      <div class="collapse navbar-collapse order-lg-2" id="navbarMenu">
+        <ul class="navbar-nav ms-auto me-lg-3">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <main>
-    <header class="min-vh-100 align-items-center bg-body-tertiary border-bottom" id="home">
-
+  <main id="mainContent">
+    <header class="min-vh-100 d-flex align-items-center bg-body-tertiary border-bottom" id="home">
       <div class="container py-5">
         <div class="row align-items-center g-5">
           <div class="col-lg-7">
-            <span class="badge rounded-pill text-bg-primary mb-3">
-              Available for internships
-            </span>
-
-            <p class="text-uppercase text-primary fw-bold small mb-2">
-              Hello, I am
-            </p>
-
-            <h1 class="display-1 fw-bold lh-1 mb-3">
-              Hiruni Kaveesha
-            </h1>
-
-            <h2 class="h3 text-body-secondary mb-4">
-              Undergraduate of Management & Information Technology | University of Kelaniya
-            </h2>
-
+            <span class="badge rounded-pill text-bg-primary mb-3">Available for internships</span>
+            <p class="text-uppercase text-primary fw-bold small mb-2">Hello, I am</p>
+            <h1 class="display-1 fw-bold lh-1">Your Name</h1>
+            <h2 class="h3 text-body-secondary my-4">Front-End Developer &amp; UI Designer</h2>
             <p class="lead text-body-secondary">
-              I build responsive, accessible and user-friendly websites
-              using Bootstrap, JavaScript and modern web technologies.
+              I build responsive, accessible and interactive websites using
+              Bootstrap, JavaScript and public APIs.
             </p>
-
             <div class="d-flex flex-wrap gap-3 mt-4">
-              <a class="btn btn-primary btn-lg" href="#projects">
-                View projects
-              </a>
-
-              <a class="btn btn-outline-secondary btn-lg" href="#contact">
-                Contact me
-              </a>
-            </div>
-
-            <div class="d-flex flex-wrap gap-3 mt-4">
-              <a href="https://github.com/HiruniKaveesha49" target="_blank" rel="noreferrer">
-                GitHub
-              </a>
-              <a href="https://www.linkedin.com/in/hiruni-kaveesha-994148209" target="_blank" rel="noreferrer">
-                LinkedIn
-              </a>
-              <a href="ap.kaveesha.h.180@gmail.com">
-                Email
-              </a>
+              <a class="btn btn-primary btn-lg" href="#projects">View projects</a>
+              <a class="btn btn-outline-secondary btn-lg" href="#contact">Contact me</a>
             </div>
           </div>
 
           <div class="col-lg-5">
             <div class="card border-0 shadow-lg rounded-5">
               <div class="card-body p-5 text-center bg-primary-subtle rounded-5">
-                <div class="display-1 fw-bold text-primary">
-                  HK
-                </div>
-                <p class="mb-0 text-body-secondary">
-                  Bootstrap Portfolio
-                </p>
+                <div class="display-1 fw-bold text-primary">YN</div>
+                <p class="mb-0 text-body-secondary">Bootstrap Portfolio</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </header>
 
-    <!-- About Section -->
     <section class="py-5 border-bottom" id="about">
       <div class="container py-5">
-        <p class="text-uppercase text-primary fw-bold small mb-4">
-          About me
-        </p>
+        <p class="text-uppercase text-primary fw-bold small">About me</p>
+        <h2 class="display-5 fw-bold mb-4">Creating useful digital experiences</h2>
 
-        <h2 class="display-5 fw-bold mb-4">
-          Creating useful digital experiences
-        </h2>
-
-        <div class="row g-4 align-items-stretch">
+        <div class="row g-4">
           <div class="col-lg-7">
             <article class="card h-100 border-0 bg-body-tertiary">
               <div class="card-body p-4 p-md-5">
-                <h3>Who I am</h3>
-
+                <h3 class="h4">Who I am</h3>
                 <p class="text-body-secondary">
-                  I am a web-development student interested in responsive
-                  design, accessibility and clean front-end development.
+                  I am a web-development student interested in responsive design,
+                  accessibility and clean front-end code.
                 </p>
-
                 <p class="text-body-secondary mb-0">
-                  My goal is to improve my Bootstrap and JavaScript skills
-                  while creating practical portfolio projects.
+                  Replace this paragraph with your course, goals and interests.
                 </p>
               </div>
             </article>
           </div>
 
           <div class="col-lg-5">
-            <div class="row g-3 h-100">
-
+            <div class="row g-3">
               <div class="col-6">
-                <article class="card h-100">
+                <div class="card h-100">
                   <div class="card-body">
-                    <p class="display-6 fw-bold text-primary mb-1">
-                      6+
-                    </p>
-
-                    <p class="mb-0 text-body-secondary">
-                      Completed projects
-                    </p>
+                    <p class="display-6 fw-bold text-primary mb-1">6+</p>
+                    <p class="mb-0 text-body-secondary">Projects</p>
                   </div>
-                </article>
+                </div>
               </div>
-
               <div class="col-6">
-                <article class="card h-100">
+                <div class="card h-100">
                   <div class="card-body">
-                    <p class="display-6 fw-bold text-primary mb-1">
-                      8
-                    </p>
-                    <p class="mb-0 text-body-secondary">
-                      Technologies explored
-                    </p>
+                    <p class="display-6 fw-bold text-primary mb-1">8</p>
+                    <p class="mb-0 text-body-secondary">Technologies</p>
                   </div>
-                </article>
+                </div>
               </div>
-
               <div class="col-6">
-                <article class="card h-100">
+                <div class="card h-100">
                   <div class="card-body">
-                    <p class="display-6 fw-bold text-primary mb-1">
-                      3
-                    </p>
-                    <p class="mb-0 text-body-secondary">
-                      Featured projects
-                    </p>
+                    <p class="display-6 fw-bold text-primary mb-1">3</p>
+                    <p class="mb-0 text-body-secondary">Featured works</p>
                   </div>
-                </article>
+                </div>
               </div>
-
               <div class="col-6">
-                <article class="card h-100">
+                <div class="card h-100">
                   <div class="card-body">
-                    <p class="display-6 fw-bold text-primary mb-1">
-                      100%
-                    </p>
-                    <p class="mb-0 text-body-secondary">
-                      Learning mindset
-                    </p>
+                    <p class="display-6 fw-bold text-primary mb-1">100%</p>
+                    <p class="mb-0 text-body-secondary">Learning</p>
                   </div>
-                </article>
+                </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </section>
 
-
-    <!-- Skills Section -->
     <section class="py-5 bg-body-tertiary border-bottom" id="skills">
       <div class="container py-5">
         <p class="text-uppercase text-primary fw-bold small">My toolkit</p>
@@ -258,7 +209,6 @@
       </div>
     </section>
 
-    <!-- Project Section -->
     <section class="py-5 border-bottom" id="projects">
       <div class="container py-5">
         <p class="text-uppercase text-primary fw-bold small">Selected work</p>
@@ -338,85 +288,11 @@
               </div>
               <div class="col-lg-8">
                 <div class="row g-3" id="githubProjects" aria-live="polite">
-                  <div class="col-md-6">
-                    <article class="card h-100 bg-body-tertiary">
-                      <div class="card-body d-flex flex-column">
-                        <h4 class="h5">
-                          <a class="stretched-link" href="https://github.com/octocat/Hello-World" target="_blank"
-                            rel="noreferrer">
-                            Hello-World
-                          </a>
-                        </h4>
-                        <p class="small text-body-secondary flex-grow-1">
-                          My first repository on GitHub!
-                        </p>
-                        <div class="d-flex justify-content-between small">
-                          <span>Various</span>
-                          <span>★ 3740</span>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="col-md-6">
-                    <article class="card h-100 bg-body-tertiary">
-                      <div class="card-body d-flex flex-column">
-                        <h4 class="h5">
-                          <a class="stretched-link" href="https://github.com/octocat/Spoon-Knife" target="_blank"
-                            rel="noreferrer">
-                            Spoon-Knife
-                          </a>
-                        </h4>
-                        <p class="small text-body-secondary flex-grow-1">
-                          This repo is for demonstration purposes only.
-                        </p>
-                        <div class="d-flex justify-content-between small">
-                          <span>HTML</span>
-                          <span>★ 13936</span>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="col-md-6">
-                    <article class="card h-100 bg-body-tertiary">
-                      <div class="card-body d-flex flex-column">
-                        <h4 class="h5">
-                          <a class="stretched-link" href="https://github.com/octocat/linguist" target="_blank"
-                            rel="noreferrer">
-                            linguist
-                          </a>
-                        </h4>
-                        <p class="small text-body-secondary flex-grow-1">
-                          Language Savant. If your repository's language is being reported incorrectly, send us a pull
-                          request!
-                        </p>
-                        <div class="d-flex justify-content-between small">
-                          <span>Ruby</span>
-                          <span>★ 749</span>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="col-md-6">
-                    <article class="card h-100 bg-body-tertiary">
-                      <div class="card-body d-flex flex-column">
-                        <h4 class="h5">
-                          <a class="stretched-link" href="https://github.com/octocat/boysenberry-repo-1" target="_blank"
-                            rel="noreferrer">
-                            boysenberry-repo-1
-                          </a>
-                        </h4>
-                        <p class="small text-body-secondary flex-grow-1">
-                          Testing
-                        </p>
-                        <div class="d-flex justify-content-between small">
-                          <span>Various</span>
-                          <span>★ 465</span>
-                        </div>
-                      </div>
-                    </article>
+                  <div class="col-12">
+                    <div class="spinner-border text-primary" role="status">
+                      <span class="visually-hidden">Loading</span>
+                    </div>
+                    <span class="ms-2">Loading repositories…</span>
                   </div>
                 </div>
               </div>
@@ -426,7 +302,6 @@
       </div>
     </section>
 
-    <!-- Education Section -->
     <section class="py-5 bg-body-tertiary border-bottom" id="journey">
       <div class="container py-5">
         <p class="text-uppercase text-primary fw-bold small">My journey</p>
@@ -455,7 +330,6 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="py-5" id="contact">
       <div class="container py-5">
         <div class="row g-5">
@@ -466,23 +340,23 @@
           </div>
 
           <div class="col-lg-7">
-            <form class="card shadow-sm border-0 needs-validation" id="contactForm" novalidate="">
+            <form class="card shadow-sm border-0 needs-validation" id="contactForm" novalidate>
               <div class="card-body p-4 p-md-5">
                 <div class="row g-4">
                   <div class="col-md-6">
                     <label class="form-label" for="name">Name</label>
-                    <input class="form-control" id="name" name="name" type="text" minlength="2" required="">
+                    <input class="form-control" id="name" name="name" type="text" minlength="2" required>
                     <div class="invalid-feedback">Enter at least two characters.</div>
                   </div>
                   <div class="col-md-6">
                     <label class="form-label" for="email">Email</label>
-                    <input class="form-control" id="email" name="email" type="email" required="">
+                    <input class="form-control" id="email" name="email" type="email" required>
                     <div class="invalid-feedback">Enter a valid email address.</div>
                   </div>
                   <div class="col-12">
                     <label class="form-label" for="message">Message</label>
                     <textarea class="form-control" id="message" name="message" rows="5" minlength="10"
-                      required=""></textarea>
+                      required></textarea>
                     <div class="invalid-feedback">Enter at least ten characters.</div>
                   </div>
                   <div class="col-12">
